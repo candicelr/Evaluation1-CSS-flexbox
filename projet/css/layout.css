@@ -1,0 +1,86 @@
+/*Je place les élements de la div class=app-wrapper les uns à cotés des autres avec le display flex.*/
+.app-wrapper>div{
+    display: flex;
+}
+/*Je place les élements de la barre de navigation: d'abord je rends la barre de navigation flexible avec le display:
+flex puis je la positionne sous forme de colomne pour que les élements s'affichent les uns en dessous des autres,
+ensuite j'aligne les élements dans l'axe secondaire et enfin je les espace avec la propriété justify-content: 
+space-around (en valeur)*/
+.app-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+/*Je place les élements centrales*/
+.app-content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.album{
+    display: flex;
+    flex-basis: 80%;
+}
+.tracklist{
+    display: flex;
+    flex-direction: column;       
+}
+.tracklist li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Je place les élements du bas de page*/
+.app-bottom>div{
+    display: flex;
+    justify-content: flex-end;
+}
+.current{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 80%;
+    background-color: aliceblue;
+}
+.app-bottom{
+    display: flex;
+}
+.current-details{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.current-details p{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+/* Je place les élements de controles, en les rendant flexible avec display:flex, puis je leur donne un espace
+de 20% pour s'afficher, ensuite je les centre dans l'axe principal puis dans l'axe secondaire et enfin je les
+espace.*/     
+.controls a{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+/*Ajout des couleurs*/
+.app-bottom{
+    background-color: #313131;  
+}
+.app-nav{
+    background-color: #313131;
+}
+.app-content{
+    background:linear-gradient(#000),(#313131)       
+}
+.app-bottom .controls{
+    background-color:#313131;
+}
+.app-bottom .current{
+    background-color: #313131;
+}
+
